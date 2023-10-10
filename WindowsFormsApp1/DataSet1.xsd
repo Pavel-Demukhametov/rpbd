@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Building" msprop:Generator_RowEvHandlerName="BuildingRowChangeEventHandler" msprop:Generator_RowDeletedName="BuildingRowDeleted" msprop:Generator_RowDeletingName="BuildingRowDeleting" msprop:Generator_RowEvArgName="BuildingRowChangeEvent" msprop:Generator_TablePropName="Building" msprop:Generator_RowChangedName="BuildingRowChanged" msprop:Generator_RowChangingName="BuildingRowChanging" msprop:Generator_TableClassName="BuildingDataTable" msprop:Generator_RowClassName="BuildingRow" msprop:Generator_TableVarName="tableBuilding" msprop:Generator_UserTableName="Building">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BuildingCode" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnPropNameInRow="BuildingCode" msprop:Generator_ColumnPropNameInTable="BuildingCodeColumn" msprop:Generator_ColumnVarNameInTable="columnBuildingCode" msprop:Generator_UserColumnName="BuildingCode" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Address" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_UserColumnName="Address" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Space" msprop:Generator_RowEvHandlerName="SpaceRowChangeEventHandler" msprop:Generator_RowDeletedName="SpaceRowDeleted" msprop:Generator_RowDeletingName="SpaceRowDeleting" msprop:Generator_RowEvArgName="SpaceRowChangeEvent" msprop:Generator_TablePropName="Space" msprop:Generator_RowChangedName="SpaceRowChanged" msprop:Generator_RowChangingName="SpaceRowChanging" msprop:Generator_TableClassName="SpaceDataTable" msprop:Generator_RowClassName="SpaceRow" msprop:Generator_TableVarName="tableSpace" msprop:Generator_UserTableName="Space">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SpaceCode" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msdata:Caption="BuildingCode" msprop:Generator_ColumnPropNameInRow="SpaceCode" msprop:Generator_ColumnPropNameInTable="SpaceCodeColumn" msprop:Generator_ColumnVarNameInTable="columnSpaceCode" msprop:Generator_UserColumnName="SpaceCode" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Area" msdata:Caption="Address" msprop:Generator_ColumnPropNameInRow="Area" msprop:Generator_ColumnPropNameInTable="AreaColumn" msprop:Generator_ColumnVarNameInTable="columnArea" msprop:Generator_UserColumnName="Area" type="xs:double" minOccurs="0" />
+              <xs:element name="BuildingCode" msprop:Generator_ColumnPropNameInRow="BuildingCode" msprop:Generator_ColumnPropNameInTable="BuildingCodeColumn" msprop:Generator_ColumnVarNameInTable="columnBuildingCode" msprop:Generator_UserColumnName="BuildingCode" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Rental" msprop:Generator_RowEvHandlerName="RentalRowChangeEventHandler" msprop:Generator_RowDeletedName="RentalRowDeleted" msprop:Generator_RowDeletingName="RentalRowDeleting" msprop:Generator_RowEvArgName="RentalRowChangeEvent" msprop:Generator_TablePropName="Rental" msprop:Generator_RowChangedName="RentalRowChanged" msprop:Generator_RowChangingName="RentalRowChanging" msprop:Generator_TableClassName="RentalDataTable" msprop:Generator_RowClassName="RentalRow" msprop:Generator_TableVarName="tableRental" msprop:Generator_UserTableName="Rental">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RentalCode" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msdata:Caption="BuildingCode" msprop:Generator_ColumnPropNameInRow="RentalCode" msprop:Generator_ColumnPropNameInTable="RentalCodeColumn" msprop:Generator_ColumnVarNameInTable="columnRentalCode" msprop:Generator_UserColumnName="RentalCode" type="xs:int" />
+              <xs:element name="LeaseNumber" msdata:Caption="Name" msprop:Generator_ColumnPropNameInRow="LeaseNumber" msprop:Generator_ColumnPropNameInTable="LeaseNumberColumn" msprop:Generator_ColumnVarNameInTable="columnLeaseNumber" msprop:Generator_UserColumnName="LeaseNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="ExecutionDate" msdata:Caption="Address" msprop:Generator_ColumnPropNameInRow="ExecutionDate" msprop:Generator_ColumnPropNameInTable="ExecutionDateColumn" msprop:Generator_ColumnVarNameInTable="columnExecutionDate" msprop:Generator_UserColumnName="ExecutionDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="StartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_UserColumnName="StartDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_UserColumnName="EndDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SpaceCode" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnPropNameInRow="SpaceCode" msprop:Generator_ColumnPropNameInTable="SpaceCodeColumn" msprop:Generator_ColumnVarNameInTable="columnSpaceCode" msprop:Generator_UserColumnName="SpaceCode" type="xs:int" minOccurs="0" />
+              <xs:element name="TenantCode" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnPropNameInRow="TenantCode" msprop:Generator_ColumnPropNameInTable="TenantCodeColumn" msprop:Generator_ColumnVarNameInTable="columnTenantCode" msprop:Generator_UserColumnName="TenantCode" type="xs:int" minOccurs="0" />
+              <xs:element name="Cost" msprop:Generator_ColumnPropNameInRow="Cost" msprop:Generator_ColumnPropNameInTable="CostColumn" msprop:Generator_ColumnVarNameInTable="columnCost" msprop:Generator_UserColumnName="Cost" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Tenant" msprop:Generator_RowEvHandlerName="TenantRowChangeEventHandler" msprop:Generator_RowDeletedName="TenantRowDeleted" msprop:Generator_RowDeletingName="TenantRowDeleting" msprop:Generator_RowEvArgName="TenantRowChangeEvent" msprop:Generator_TablePropName="Tenant" msprop:Generator_RowChangedName="TenantRowChanged" msprop:Generator_RowChangingName="TenantRowChanging" msprop:Generator_TableClassName="TenantDataTable" msprop:Generator_RowClassName="TenantRow" msprop:Generator_TableVarName="tableTenant" msprop:Generator_UserTableName="Tenant">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TenantCode" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msdata:Caption="BuildingCode" msprop:Generator_ColumnPropNameInRow="TenantCode" msprop:Generator_ColumnPropNameInTable="TenantCodeColumn" msprop:Generator_ColumnVarNameInTable="columnTenantCode" msprop:Generator_UserColumnName="TenantCode" type="xs:int" />
+              <xs:element name="CompanyName" msdata:Caption="Name" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_UserColumnName="CompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="RegisteredAddress" msdata:Caption="Address" msprop:Generator_ColumnPropNameInRow="RegisteredAddress" msprop:Generator_ColumnPropNameInTable="RegisteredAddressColumn" msprop:Generator_ColumnVarNameInTable="columnRegisteredAddress" msprop:Generator_UserColumnName="RegisteredAddress" type="xs:string" minOccurs="0" />
+              <xs:element name="ManagerName" msprop:Generator_ColumnPropNameInRow="ManagerName" msprop:Generator_ColumnPropNameInTable="ManagerNameColumn" msprop:Generator_ColumnVarNameInTable="columnManagerName" msprop:Generator_UserColumnName="ManagerName" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactNumber" msprop:Generator_ColumnPropNameInRow="ContactNumber" msprop:Generator_ColumnPropNameInTable="ContactNumberColumn" msprop:Generator_ColumnVarNameInTable="columnContactNumber" msprop:Generator_UserColumnName="ContactNumber" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="BuildingCode" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Building" />
+      <xs:field xpath="mstns:BuildingCode" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Space" />
+      <xs:field xpath="mstns:SpaceCode" />
+    </xs:unique>
+    <xs:unique name="Rental_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Rental" />
+      <xs:field xpath="mstns:RentalCode" />
+    </xs:unique>
+    <xs:unique name="Tenant_BuildingCode" msdata:ConstraintName="BuildingCode" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Tenant" />
+      <xs:field xpath="mstns:TenantCode" />
+    </xs:unique>
+    <xs:keyref name="FK_Space_Rental" refer="Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:Rental" />
+      <xs:field xpath="mstns:SpaceCode" />
+    </xs:keyref>
+    <xs:keyref name="FK_Tenant_Rental" refer="Tenant_BuildingCode" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:Rental" />
+      <xs:field xpath="mstns:TenantCode" />
+    </xs:keyref>
+    <xs:keyref name="FK_Building_Space" refer="BuildingCode" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:Space" />
+      <xs:field xpath="mstns:BuildingCode" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
