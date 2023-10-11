@@ -12,12 +12,19 @@ namespace WindowsFormsApp1
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
+        ///
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            FMDI FMDI = new FMDI();
+            FMDI.IsMdiContainer = true;
+            Application.Run(FMDI);
+
+
+
         }
     }
 }
